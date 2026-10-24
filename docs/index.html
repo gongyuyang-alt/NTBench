@@ -70,9 +70,8 @@ code,pre,.mono{font-family:var(--mono)}
       border-bottom:1px solid var(--line);padding-block:4rem 3.5rem;text-align:center}
 .hero .eyebrow{color:var(--accent-strong)}
 .hero h1{font-size:clamp(2.6rem,6vw,3.75rem);font-weight:700;letter-spacing:-.03em;margin-top:.75rem}
-.hero .question{font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:500;color:var(--fg-2);margin-top:.5rem}
-.hero .summary{max-width:46rem;margin:1.25rem auto 0;color:var(--fg-2)}
-.hero .paper-title{max-width:46rem;margin:.9rem auto 0;font-size:1rem;font-style:italic;color:var(--muted)}
+.hero .question{max-width:50rem;margin:.6rem auto 0;font-size:clamp(1.15rem,2.2vw,1.5rem);font-weight:500;color:var(--fg-2)}
+.hero .summary{max-width:48rem;margin:1.25rem auto 0;color:var(--fg-2);text-align:left}
 .hero .authors{margin-top:1.5rem;color:var(--fg-2);font-size:1rem}
 .hero .authors a{color:var(--fg)}
 .hero .affil{margin-top:.35rem;color:var(--muted);font-size:.875rem}
@@ -226,9 +225,8 @@ footer{padding-block:2.5rem;color:var(--muted);font-size:.875rem;text-align:cent
   <div class="container">
     <div class="eyebrow">Near-Target Benchmark</div>
     <h1>NTBench</h1>
-    <p class="question">Do LLMs and agents follow prompt injections that stay close to the user's task?</p>
-    <p class="paper-title">On Task, Off Track: Benchmarking LLM and Agent Robustness to Near-Target Prompt Injection</p>
-    <p class="summary">A near-target injection asks for a response that still looks like the legitimate answer but is incorrect or harmful. NTBench builds such injections for language and agentic tasks and shows that seven models follow them far more often than the fixed-target injections of existing benchmarks.</p>
+    <p class="question">On Task, Off Track: Benchmarking LLM and Agent Robustness to Near-Target Prompt Injection</p>
+    <p class="summary">Prompt injection benchmarks mostly test instructions that obviously abandon the user's request. A system can reject those and still accept a response that keeps most of a legitimate answer but makes it incorrect or harmful: a workshop announcement with the wrong start time, or one that discloses the organizer's private phone number. NTBench calls these near-target prompt injections. It generates them from a legitimate reference outcome for each task, in an incorrect-target track and a harmful-target track, and validates every target with LLM checks and human review. Under the same budget of three attack executions per sample, both tracks succeed more often than fixed-target baselines on every evaluated model, in language and agentic tasks.</p>
     <p class="authors"><a href="mailto:GONG0114@e.ntu.edu.sg">Yuyang Gong</a><sup>1,†</sup>, <a href="mailto:zihao.wang@ntu.edu.sg">Zihao Wang</a><sup>1,†</sup>, <a href="mailto:laujames2017@whu.edu.cn">Jiawei Liu</a><sup>2</sup>, <a href="mailto:xiaofeng.wang@ntu.edu.sg">XiaoFeng Wang</a><sup>1</sup></p>
     <p class="affil"><sup>1</sup>Nanyang Technological University &nbsp;·&nbsp; <sup>2</sup>Wuhan University &nbsp;·&nbsp; <sup>†</sup>Equal contribution</p>
     <div class="btn-row">
